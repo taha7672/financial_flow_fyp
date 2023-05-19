@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('backend/assets/images/favicon.png') }}">
-    <title>Simplifyinvoice Admin</title>
+    <title>FinancialFlow Admin</title>
 
     <!-- toast CSS -->
     <link href="{{ asset('backend/assets/node_modules/toast-master/css/jquery.toast.css') }}" rel="stylesheet">
@@ -81,7 +81,7 @@
         <div class="preloader">
             <div class="loader">
                 <div class="loader__figure"></div>
-                <p class="loader__label">Simplifyinvoice admin</p>
+                <p class="loader__label">FinancialFlow admin</p>
             </div>
         </div>
 

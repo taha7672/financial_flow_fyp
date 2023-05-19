@@ -107,7 +107,7 @@
 
 
                 </div>
-         
+
                 <div class="row">
                     <div class="col-md-6">
                         <div class="row">
@@ -206,25 +206,6 @@
 
 
 
-                <div class="col-12 mb-3 row reg-label">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="privacy_policy" value="1"
-                            id="flexCheckDefault" required>
-                        <label class="form-check-label " for="flexCheckDefault" style="float: left">
-                            I agree with the <a href="#" class="" style="color: rgb(76, 76, 226)">Privacy
-                                policy</a>.
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="terms_of_services" value="1"
-                            id="flexCheckDefault" required>
-                        <label class="form-check-label " for="flexCheckDefault" style="float: left">
-                            I agree with the <a href="#" class="" style="color: rgb(76, 76, 226)">Terms
-                                of services</a>.
-                        </label>
-                    </div>
-
-                </div>
 
                 <div class="col-12 form-group ">
                     <a href="{{ route('login') }}">Already Signup?</a>

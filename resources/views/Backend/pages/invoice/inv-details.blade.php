@@ -45,7 +45,7 @@
                             <div class="col-md-12">
                                 <div class="pull-left">
                                     <address>
-                                        <h3> &nbsp;<b class="text-danger">SimplifyInvoice</b></h3>
+                                        <h3> &nbsp;<b class="text-danger">FinancialFlow</b></h3>
                                         {{-- <p class="text-muted m-l-5">E 104, Dharti-2,
                                                 <br/> Nr' Viswakarma Temple,
                                                 <br/> Talaja Road,
@@ -61,10 +61,10 @@
                                                 <br/> Talaja Road,
                                                 <br/> Bhavnagar - 364002</p> --}}
                                         <p class="m-t-30"><b>Invoice Date :</b> <i class="fa fa-calendar"></i>
-                                            {{dateFormat($invoice->invoice_date)}}
+                                            {{ dateFormat($invoice->invoice_date) }}
                                         </p>
                                         <p><b>Due Date :</b> <i class="fa fa-calendar"></i>
-                                            {{dateFormat($invoice->due_date)}}
+                                            {{ dateFormat($invoice->due_date) }}
                                         </p>
                                     </address>
                                 </div>
@@ -111,11 +111,10 @@
                                 <div class="text-right">
                                     {{-- if paid status of that invoice is 1 then show alerady paid  --}}
                                     @if ($invoice->paid_status == 1)
-                                    <button class="btn btn-success" >Already Paid </button> 
-
+                                        <button class="btn btn-success">Already Paid </button>
                                     @else
-                                    <button class="btn btn-danger" data-toggle="modal" data-target="#responsive-modal">Proceed to payment </button>
-                                    
+                                        <button class="btn btn-danger" data-toggle="modal"
+                                            data-target="#responsive-modal">Proceed to payment </button>
                                     @endif
                                     {{-- <button id="print" class="btn btn-default btn-outline" type="button"> <span><i class="fa fa-print"></i> Print</span> </button> --}}
                                 </div>
@@ -203,57 +202,58 @@
         </div>
     </div>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-  
-<script type="text/javascript">
-$(function() {
-    var $form         = $(".validation");
-  $('form.validation').bind('submit', function(e) {
-    var $form         = $(".validation"),
-        inputVal = ['input[type=email]', 'input[type=password]',
-                         'input[type=text]', 'input[type=file]',
-                         'textarea'].join(', '),
-        $inputs       = $form.find('.required').find(inputVal),
-        $errorStatus = $form.find('div.error'),
-        valid         = true;
-        $errorStatus.addClass('hide');
- 
-        $('.has-error').removeClass('has-error');
-    $inputs.each(function(i, el) {
-      var $input = $(el);
-      if ($input.val() === '') {
-        $input.parent().addClass('has-error');
-        $errorStatus.removeClass('hide');
-        e.preventDefault();
-      }
-    });
-  
-    if (!$form.data('cc-on-file')) {
-      e.preventDefault();
-      Stripe.setPublishableKey($form.data('stripe-publishable-key'));
-      Stripe.createToken({
-        number: $('.card-num').val(),
-        cvc: $('.card-cvc').val(),
-        exp_month: $('.card-expiry-month').val(),
-        exp_year: $('.card-expiry-year').val()
-      }, stripeHandleResponse);
-    }
-  
-  });
-  
-  function stripeHandleResponse(status, response) {
-        if (response.error) {
-            $('.error')
-                .removeClass('hide')
-                .find('.alert')
-                .text(response.error.message);
-        } else {
-            var token = response['id'];
-            $form.find('input[type=text]').empty();
-            $form.append("<input type='hidden' name='stripeToken' value='" + token + "'/>");
-            $form.get(0).submit();
-        }
-    }
-  
-});
-</script>
+
+    <script type="text/javascript">
+        $(function() {
+            var $form = $(".validation");
+            $('form.validation').bind('submit', function(e) {
+                var $form = $(".validation"),
+                    inputVal = ['input[type=email]', 'input[type=password]',
+                        'input[type=text]', 'input[type=file]',
+                        'textarea'
+                    ].join(', '),
+                    $inputs = $form.find('.required').find(inputVal),
+                    $errorStatus = $form.find('div.error'),
+                    valid = true;
+                $errorStatus.addClass('hide');
+
+                $('.has-error').removeClass('has-error');
+                $inputs.each(function(i, el) {
+                    var $input = $(el);
+                    if ($input.val() === '') {
+                        $input.parent().addClass('has-error');
+                        $errorStatus.removeClass('hide');
+                        e.preventDefault();
+                    }
+                });
+
+                if (!$form.data('cc-on-file')) {
+                    e.preventDefault();
+                    Stripe.setPublishableKey($form.data('stripe-publishable-key'));
+                    Stripe.createToken({
+                        number: $('.card-num').val(),
+                        cvc: $('.card-cvc').val(),
+                        exp_month: $('.card-expiry-month').val(),
+                        exp_year: $('.card-expiry-year').val()
+                    }, stripeHandleResponse);
+                }
+
+            });
+
+            function stripeHandleResponse(status, response) {
+                if (response.error) {
+                    $('.error')
+                        .removeClass('hide')
+                        .find('.alert')
+                        .text(response.error.message);
+                } else {
+                    var token = response['id'];
+                    $form.find('input[type=text]').empty();
+                    $form.append("<input type='hidden' name='stripeToken' value='" + token + "'/>");
+                    $form.get(0).submit();
+                }
+            }
+
+        });
+    </script>
 @endsection

@@ -57,7 +57,7 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             // 'strict' => true,
-            'strict' => false,       //get rid of the error SQLSTATE[42000]: Syntax error or access violation: 1055 'simplifyinvoice.users.first_name' isn't in GROUP BY
+            'strict' => false,       //get rid of the error SQLSTATE[42000]: Syntax error or access violation: 1055 'FinancialFlow.users.first_name' isn't in GROUP BY
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
@@ -126,7 +126,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [

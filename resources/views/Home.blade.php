@@ -1,13 +1,13 @@
 @extends('layouts.links')
 <style>
     .bg-color-r,
-	::after {
+    ::after {
         background-color: #1ABC9C !important;
     }
 
     h3,
-	span,
-	
+    span,
+
     .color {
         color: #1ABC9C !important;
     }
@@ -31,10 +31,7 @@
                         <!-- Logo
       ============================================= -->
                         <div id="logo">
-                            <a href="index.html" class="standard-logo"><img
-                                    src="{{ asset('frontend/invoice/images/logo.png') }} " alt="Canvas Logo"></a>
-                            <a href="index.html" class="retina-logo"><img
-                                    src="{{ asset('frontend/invoice/images/logo@2x.png') }} " alt="Canvas Logo"></a>
+
                         </div><!-- #logo end -->
 
                         <!-- Primary Menu Mobile Trigger
@@ -54,10 +51,10 @@
                         <!-- Header Buttons
       ============================================= -->
                         <div class="header-misc">
-                            <a href="{{route('signup')}} "
+                            <a href="{{ route('signup') }} "
                                 class="button rounded-pill bg-color-2 button-light text-dark ls0 fw-medium m-0">Sign
                                 Up</a>
-                            <a href="#" class="button rounded-pill ls0 fw-medium my-0 ms-2 d-none d-sm-flex ">Download App</a>
+
                         </div>
 
                         <!-- Primary Navigation
@@ -94,16 +91,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 py-5">
-                        <h2 class="display-4 color fw-normal font-display"><span>The Threat is the Virus, not the people. We
-                            will get through this, Together.</span></h2>
-                        <p class="color"><span>Objectively harness robust ROI via functional leadership skills. Holisticly
-                            create one-to-one models.</span></p>
-                        <a href="{{route('signup')}}"
+                        <h2 class="display-4 color fw-normal font-display"><span>Simplify financial management. Boost
+                                productivity. Choose FinancialFlow.</span></h2>
+                        <p class="color"><span>Take control of your finances with FinancialFlow - the smarter way to
+                                manage your business.</span></p>
+                        <a href="{{ route('signup') }}"
                             class="btn text-larger rounded-pill bg-color-r text-white px-4 py-2 h-op-09 op-ts">Sign
                             Up</a>
-                        <a href="#"
-                            class="btn text-larger rounded-pill px-4 py-2 ms-2 border-color color h-op-09 op-ts">Download
-                            App</a>
                     </div>
                 </div>
             </div>
@@ -122,9 +116,9 @@
                         <div class="row justify-content-center mt-5">
                             <div class="col-md-7 text-center">
                                 <h3 class="display-4 color fw-bold font-display"><span>How It Works</span></h3>
-                                <p class="lead" style="line-height: 1.5">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Omnis consectetur consequatur possimus asperiores. Vel maxime
-                                    error cupiditate.</p>
+                                <p class="lead" style="line-height: 1.5">Create invoices, manage customers, track
+                                    transactions, and optimize your financial workflows, all in one seamless platform.
+                                </p>
                             </div>
                         </div>
 
@@ -137,8 +131,9 @@
                                         </div>
                                         <div class="fbox-content">
                                             <h3 class="nott text-larger mb-2">Download & Sign up</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolores aperiam
-                                                amet.</p>
+                                            <p>Simplify your financial management and sign up for FinancialFlow today.
+                                                Experience seamless billing, efficient customer management, and
+                                                optimized financial workflows.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-center">
@@ -153,9 +148,10 @@
                                             <a href="#"><i>2</i></a>
                                         </div>
                                         <div class="fbox-content">
-                                            <h3 class="nott text-larger mb-2">Welcome to dashboard </h3>
-                                            <p>Lorem ipsum dolor sit amet, tur maiores totam odit molestiae vel ut earum
-                                                deleniti.</p>
+                                            <h3 class="nott text-larger mb-2">Welcome to your Dashboard</h3>
+                                            <p>Experience a new level of financial management with FinancialFlow.
+                                                Streamline your processes, track transactions, and stay in control of
+                                                your business finances.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-center">
@@ -170,9 +166,10 @@
                                             <a href="#"><i>3</i></a>
                                         </div>
                                         <div class="fbox-content">
-                                            <h3 class="nott text-larger mb-2">Create new invoices</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                                                deleniti.</p>
+                                            <h3 class="nott text-larger mb-2">Create new invoices effortlessly</h3>
+                                            <p>Simplify your billing process and generate professional invoices in just
+                                                a few clicks. Save time, reduce errors, and keep your finances organized
+                                                with FinancialFlow.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-center">
@@ -187,9 +184,11 @@
                                             <a href="#"><i>4</i></a>
                                         </div>
                                         <div class="fbox-content">
-                                            <h3 class="nott text-larger mb-2">Share invoice with coustomer </h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                                                deleniti.</p>
+                                            <h3 class="nott text-larger mb-2">Share invoices with your customers
+                                                seamlessly</h3>
+                                            <p>Effortlessly send invoices to your customers and ensure timely payments.
+                                                Improve communication and enhance your business relationships with
+                                                FinancialFlow.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-center">
@@ -204,9 +203,11 @@
                                             <a href="#"><i>5</i></a>
                                         </div>
                                         <div class="fbox-content">
-                                            <h3 class="nott text-larger mb-2">You recivied Payment</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                                                deleniti.</p>
+                                            <h3 class="nott text-larger mb-2">Stay informed when payments are received
+                                            </h3>
+                                            <p>Receive instant notifications and keep track of your incoming payments.
+                                                Stay on top of your finances with FinancialFlow's payment tracking
+                                                feature.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-center">
@@ -292,43 +293,6 @@
 
                 </div>
 
-                <!-- Download App Section
-    ============================================= -->
-                <div class="section py-md-0 section-mobile bg-color-r-2"
-                    style="background: url('{{ asset('frontend/invoice/images/illustration/bg-pattern.svg') }} ') no-repeat center left / contain;">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-
-                            <div class="col-lg-5 col-md-6 py-5 py-lg-0">
-                                <h3 class="display-3 color fw-normal font-display mb-5"><span>Download Our SimplifyInvoice App.</span></h3>
-                                <p class="text-large color">Progressively strategize just in time scenarios and
-                                    compelling results. Intrinsicly parallel task extensive systems whereas distinctive
-                                    catalysts for scenarios and compelling results change.</p>
-                                <div>
-                                    <a href="#"><img src="{{ asset('frontend/invoice/images/appstore.png') }} "
-                                            alt="Image" height="54" class="mt-3"></a>
-                                    <a href="#"><img
-                                            src="{{ asset('frontend/invoice/images/googleplay.png') }} "
-                                            alt="Image" class="ms-xl-3 ms-lg-1 mt-3 ms-0 " height="54"></a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 mt-5 mt-sm-0">
-                                <div class="d-none d-lg-flex">
-                                    <img src="{{ asset('frontend/invoice/images/iphone-2.png') }} " class="fast"
-                                        alt="Image" style="height: 600px" data-animate="fadeInUp"
-                                        data-delay="200">
-                                    <img src="{{ asset('frontend/invoice/images/iphone-1.png') }} " class="fast"
-                                        alt="Image" style="height: 600px" data-animate="fadeInUp">
-                                </div>
-                                <img src="{{ asset('frontend/invoice/images/iphone.png') }} " alt="Image"
-                                    class="d-block d-lg-none px-5 px-sm-0 p-md-5">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Featured Icons Area
     ============================================= -->
                 <div class="container topmargin-lg clearfix">
@@ -340,7 +304,8 @@
                         <div class="pricing-box pricing-extended row align-items-stretch mt-6 mx-0 border-0 rounded-3"
                             style="background-color: rgba(15,100,88,.07);">
                             <div class="pricing-desc col-lg-9 p-5">
-                                <h3 class="h2 color fw-normal font-display border-bottom pb-4 mb-4"> <span>Our Pricing</span></h3>
+                                <h3 class="h2 color fw-normal font-display border-bottom pb-4 mb-4"> <span>Our
+                                        Pricing</span></h3>
                                 <div class="pricing-features bg-transparent pt-3 pb-0">
                                     <ul class="row">
                                         <li class="col-md-6"><i class="icon-line-check-circle color me-2"></i> First
@@ -382,14 +347,14 @@
                                 style="background-color: rgba(15,100,88,.07);">
 
                                 <div class="col-md-7 text-center">
-                                    <h3 class="display-4 color fw-bold font-color-r font-display mt-4"><span>Contact Us</span></h3>
+                                    <h3 class="display-4 color fw-bold font-color-r font-display mt-4"><span>Contact
+                                            Us</span></h3>
                                     <div class="col-lg-12">
 
 
                                         <div class="form-result"></div>
 
-                                        <form class="mb-0" id="template-contactform" name="template-contactform"
-                                            action="#" >
+                                        <form class="mb-0" name="template-contactform" action="#">
 
                                             <div class="form-process">
                                                 <div class="css3-spinner">
@@ -431,8 +396,8 @@
                                                 <div class="col-12 form-group mb-4">
                                                     <button
                                                         class="L-float button button-large rounded-pill bg-color-r px-4 py-2 h-op-09 op-ts m-0"
-                                                        type="submit" id="template-contactform-submit"
-                                                        name="template-contactform-submit" value="submit">Send
+                                                        type="submit" name="template-contactform-submit"
+                                                        value="submit">Send
                                                         Message</button>
                                                 </div>
                                             </div>
@@ -481,31 +446,31 @@
 
                                     <div class="col-lg-3 col-6 widget_links">
                                         <ul>
-                                            <li><a href="#">Shop</a></li>
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Events</a></li>
-                                            <li><a href="#">Forums</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#how-it-works">How It Works</a></li>
+                                            <li><a href="#App-Features">App Features</a></li>
+                                            <li><a href="#pricing">Pricing</a></li>
+                                            <li><a href="#contact-us">Contact Us</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="col-lg-3 col-6 widget_links">
                                         <ul>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Agency</a></li>
-                                            <li><a href="#">eCommerce</a></li>
-                                            <li><a href="#">Personal</a></li>
-                                            <li><a href="#">One Page</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#how-it-works">How It Works</a></li>
+                                            <li><a href="#App-Features">App Features</a></li>
+                                            <li><a href="#pricing">Pricing</a></li>
+                                            <li><a href="#contact-us">Contact Us</a></li>
                                         </ul>
                                     </div>
 
                                     <div class="col-lg-3 col-6 widget_links">
                                         <ul>
-                                            <li><a href="#">Corporate</a></li>
-                                            <li><a href="#">Agency</a></li>
-                                            <li><a href="#">eCommerce</a></li>
-                                            <li><a href="#">Personal</a></li>
-                                            <li><a href="#">One Page</a></li>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#how-it-works">How It Works</a></li>
+                                            <li><a href="#App-Features">App Features</a></li>
+                                            <li><a href="#pricing">Pricing</a></li>
+                                            <li><a href="#contact-us">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -519,7 +484,7 @@
                                 <div class="row">
                                     <div class="col-12 mb-3">
                                         <small>Call Us:</small>
-                                        <h4 class="h4">(1) 22 55412474</h4>
+                                        <h4 class="h4">+92 3097672118</h4>
                                     </div>
 
                                     <div class="col-12 d-flex justify-content-center justify-content-lg-end">
@@ -542,7 +507,7 @@
                                     </div>
 
                                     <div class="col-12 mt-5 text-white-50 text-smaller">
-                                        All Rights Reserved <br>&copy; 2022 by SimplifyInvoice<br>
+                                        All Rights Reserved <br>&copy; {{ $year = date('Y') }} by FinancialFlow<br>
                                     </div>
                                 </div>
 

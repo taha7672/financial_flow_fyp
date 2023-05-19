@@ -9,18 +9,27 @@
 	font-weight: 500;
 }
 
-.bg-color-2 { background-color: #FFCD8C !important; }
-.color-2 { color: #FFCD8C !important; }
-
-.slider-element { background: linear-gradient(to right, rgba(255,255,255,1) 40%, rgba(70,193,176, .7)), url('images/1.png') no-repeat 90% 100% / auto 100%; }
-
-@media (min-width: 992px) {
-	.slider-element {
-		background: linear-gradient(to right, rgba(255,255,255,0), rgba(70,193,176, 0.17)), url('images/1.png') no-repeat 90% 100% / auto 100%;
-	}
+.bg-color-2 {
+	background-color: #FFCD8C !important;
 }
 
-.feature-box-border .feature-box { position: relative; }
+.color-2 {
+	color: #FFCD8C !important;
+}
+
+.slider-element {
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 40%, rgba(70, 193, 176, .5)), url('images/1.jpg') no-repeat 60% 100% / auto 100%;
+}
+
+/* @media (min-width: 992px) {
+	.slider-element {
+		background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(70, 193, 176, 0.17)), url('images/1.jpg') no-repeat 90% 100% / auto 100%;
+	}
+} */
+
+.feature-box-border .feature-box {
+	position: relative;
+}
 
 .feature-box-border .feature-box:not(.noborder)::after {
 	content: "";
@@ -33,7 +42,9 @@
 	z-index: 0;
 }
 
-.feature-box-border .fbox-color.feature-box:not(.noborder)::after { background-color: #1ABC9C; }
+.feature-box-border .fbox-color.feature-box:not(.noborder)::after {
+	background-color: #1ABC9C;
+}
 
 .feature-box-border .fbox-icon i,
 .feature-box-border .fbox-border.fbox-light .fbox-icon i {
@@ -43,7 +54,9 @@
 	text-align: center;
 }
 
-.fbox-border.fbox-light .fbox-icon a { background-color: #FFF; }
+.fbox-border.fbox-light .fbox-icon a {
+	background-color: #FFF;
+}
 
 .fbox-border.fbox-effect .fbox-icon i::after {
 	background-color: #1ABC9C;
@@ -51,10 +64,13 @@
 
 .bg-color-50 {
 	background-color: #1ABC9C !important;
-	background-color: #1ABC9C!important; /* Or, less accurately, #ff08 */
+	background-color: #1ABC9C !important;
+	/* Or, less accurately, #ff08 */
 }
 
-.dark .line { border-color: rgb(255, 205,140, .2) !important; }
+.dark .line {
+	border-color: rgb(255, 205, 140, .2) !important;
+}
 
 .section-mobile {
 	width: calc(100vw - 30px);
@@ -75,7 +91,9 @@
 	Services Grid
 ---------------------------------------------------------------------------- */
 
-.grid-border { overflow: hidden; }
+.grid-border {
+	overflow: hidden;
+}
 
 .grid-border [class^=col-]:before,
 .grid-border [class^=col-]:after {
@@ -99,7 +117,9 @@
 	border-bottom: 1px solid #FFCD8C50;
 }
 
-.pricing-price { font-size: 5rem; }
+.pricing-price {
+	font-size: 5rem;
+}
 
 /* ----------------------------------------------------------------------------
 	Nav - About Page
@@ -108,6 +128,7 @@
 	margin-bottom: 10px;
 	border-radius: 3px;
 }
+
 .nav-pills .nav-link.active {
 	background-color: #1ABC9C;
 	margin-bottom: 20px;
@@ -164,7 +185,7 @@
 	left: 0;
 }
 
-.bg-pattern ~ * {
+.bg-pattern~* {
 	position: relative;
 	z-index: 1;
 }
