@@ -1,0 +1,256 @@
+/*
+File: scss
+*/
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+/*Theme Colors*/
+
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: #00c292;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+    font-size: 13px;
+     
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* .select2.select2-container {
+    width: 100% !important;
+} */
+.select2.select2-container {
+    width:300px !important;
+}
+
+.select2.select2-container .select2-selection {
+    border: 1px solid rgb(205, 205, 205);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 4px;
+    height: 36px;
+    margin-bottom: 15px;
+    outline: none !important;
+    transition: all .15s ease-in-out;
+}
+
+.select2.select2-container .select2-selection .select2-selection__rendered {
+    /* color: rgb(184, 175, 175); */
+    color: #000;
+    line-height: 36px;
+    padding-right: 33px;
+}
+
+.select2.select2-container .select2-selection .select2-selection__arrow {
+    background: #f8f8f8;
+    border-left: 1px solid #ccc;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    height: 32px;
+    width: 35px;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single {
+    background: #f8f8f8;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--single .select2-selection__arrow {
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0 0;
+}
+
+.select2.select2-container.select2-container--open .select2-selection.select2-selection--multiple {
+    border: 1px solid #a9adb1;
+}
+
+.select2.select2-container .select2-selection--multiple {
+    height: auto;
+    min-height: 34px;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-search--inline .select2-search__field {
+    margin-top: 0;
+    height: 36px;
+}
+.select2-search__field{
+    border: #a9adb1 solid 1px;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: block;
+    padding: 0 4px;
+    line-height: 29px;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-selection__choice {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 4px 4px 0 0;
+    padding: 0 6px 0 22px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    position: relative;
+}
+
+.select2.select2-container .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    margin: 0;
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.select2-container .select2-dropdown {
+    background: transparent;
+    border: none;
+    margin-top: -5px;
+}
+
+.select2-container .select2-dropdown .select2-search {
+    padding: 0;
+}
+
+.select2-container .select2-dropdown .select2-search input {
+    outline: none !important;
+    border: 1px solid #bab2b2 !important;
+    border-bottom: none !important;
+    padding: 4px 6px !important;
+}
+
+.select2-container .select2-dropdown .select2-results {
+    padding: 0;
+}
+
+.select2-container .select2-dropdown .select2-results ul {
+    background: #fff;
+    border: 1px solid #a2abb3;
+}
+
+.select2-container .select2-dropdown .select2-results ul .select2-results__option--highlighted[aria-selected] {
+    background-color: #00C292;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.tab-sty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-sty {
+    border-radius: 8px;
+    width: 70%;
+}
+
+.space-sty {
+    width: 80%;
+}
+
+.icon-sty {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+
+.item {
+    display: flex;
+    margin-left: -7px;
+
+    
+}
+
+.total-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 20px;
+  width: 100%;
+
+}
+
+.total-sty {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+
+}
+
+.input-sty {
+    width: 60%;
+
+}
+
+.line {
+    width: 80%;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+.date-sty,
+.sty-format {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.taxBox{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+}
+.mar-top{
+    border-collapse:separate;
+    border-spacing:0 10px;
+
+}
+.details-row-sty{
+    display: flex;
+    justify-content: space-around;
+
+}
